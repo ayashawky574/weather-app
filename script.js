@@ -43,7 +43,7 @@ getLocation()
 
 async function getWeather( latitude , longitude ){
     try{
-        let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=a482a46e2e404e61ab7170048251211&q=${latitude+","+longitude }`);
+        let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=a482a46e2e404e61ab7170048251211&q=${latitude+","+longitude }`);
 let data =await response.json();
 UI.degree.innerHTML = data.current.temp_c + `<sup>o</sup>c`;
 UI.forecastIcon.src= data.current.condition.icon;
@@ -62,7 +62,7 @@ await getForecast(currentLocation)
 
 async function getForecast(q){
     try{
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a482a46e2e404e61ab7170048251211&q=${q}&days=3`)
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a482a46e2e404e61ab7170048251211&q=${q}&days=3`)
     let data =await response.json();
     let latCity ,longCity;
     UI.seconddayForecastImg.src = data.forecast.forecastday[1].day.condition.icon;
@@ -84,7 +84,7 @@ async function getForecast(q){
 
 async function searchCityName(cityName){
     try{
-       let response =await fetch(`http://api.weatherapi.com/v1/search.json?key=a482a46e2e404e61ab7170048251211&q=${cityName}`);
+       let response =await fetch(`https://api.weatherapi.com/v1/search.json?key=a482a46e2e404e61ab7170048251211&q=${cityName}`);
     let data = await response.json();
     cityName = data[0]?.name;
     return cityName;
