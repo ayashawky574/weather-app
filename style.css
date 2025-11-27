@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    --main-color:#212529;
+    --second-color: #028ebe;
+}
+a{
+    text-decoration: none;
+    color: #ffffffbb;
+}
+.active-item{
+    color: var(--second-color) !important;
+}
+nav .fa-cloud{
+  font-size: 69px !important;
+  font-weight: 800;
+}
+nav p , .forecast-row .text-color  {
+    font-size: 12px;
+    color: #ffffffbb !important;
+}
+.breadcrumb-item{
+    color: #ffffffbb !important;
+}
+.thin-border{
+    border-bottom: 0.1px solid rgba(245, 245, 245, 0.1)  !important;
+    /* color: white ; */
+}
+.collapse ul .nav-item:hover .nav-link{
+    color: #028ebe!important;
+}
+nav button:hover {
+    color: #028ebe !important;
+}
+.maxtempFontSize{
+    font-size: 32px;
+}
+.mintempFontSize{
+    font-size: 20px !important;
+}
+ #button-addon2{
+    position: absolute !important;
+    right: 20px !important;
+    top: 7px !important;
+            transform: translate(9px);
+
+}
+input{
+    background-color: #1e202b !important;
+}
+#footer-input{
+    background-color: #181921 !important;
+
+}
+.icons-container i{
+    color:#181921 ;
+}
+ .footerBtn{
+            transform: translate(15px) !important;
+            padding-inline: 20px !important ;
+           font-weight: 500;
+}
+input::placeholder{
+    color: #757575 !important;
+    font-size: 18px;
+}
+.custom-height{
+    height: 550px;
+}
+.forecast-header{
+        height: 70px !important;
+        background-color: #2d303d;
+        color: white;
+}
+.forecastheader-bg{
+ background-color: #222530;
+}
+.forecastbg{
+    background-color: #323544;
+}
+.middle-forecast{
+    background-color: rgb(38,41,54);
+}
+#locationName{
+    font-size: 36px;
+}
+#degree{
+    font-size: 110px;
+    font-weight: 700;
+}
+.bg-img{
+    background-image: url(imgs/my-bg.png);
+   background-size: 100% 55%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px !important;
+    background-color: #1e202b;
+}
+.footer-color{
+    background-color: #262936;
+    padding: 100px;
+} 
+.contact-section nav ,.photos-section nav {
+    background-color: #373b4f;
+}
+.fa-brands{
+    margin: 20px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    /* z-index: 0; */
+}
+#footer-prag{
+        font-size: 15px !important;
+} 
+.card{
+    background-color: #373b4f;
+}
+.card-body i{
+    color: #028ebe;
+}
+.section-container{
+    padding: 50px !important;
+}
+.section-container input , textarea{
+    border-width: 2px !important;
+    border-color: #757575 !important;
+
+}
+.section-container input:hover ,textarea:hover{
+    border-color: #0dcaf0 !important;
+    
+}
+textarea:focus{
+    border-color: #0dcaf0 !important;
+}
+textarea::placeholder{
+    color: #757575 !important;
+}
+#news-section{
+    background-color: #605f5fb5;
+}
+#news-section .card{
+    height: 500px;
+    color: #b0b0b0b5;
+}
+
+@media only screen and (min-width:768px) {
+    .collapse ul{
+        background-color:currentColor !important;
+        margin-bottom: 2px;
+    }
+    nav ul .nav-item{
+        margin-right: 50px;
+        /* border-bottom:none !important; */
+        padding: 0 15px!important;
+        border:1px solid transparent !important;
+        transition: all 0.5s ease-in-out;
+    }
+    nav ul li:hover{
+        border-radius: 43%;
+        border:1px solid #028ebe !important; 
+    }
+    input{
+        padding: 25px !important;
+    }
+    .custom-height{
+        height: 600px !important;
+    }
+    .no-rounded{
+        border-top-right-radius: 0 !important;
+    }
+    .right-rounded{
+        border-top-right-radius: 15px !important;
+        border-bottom-left-radius:0 !important ;
+    }
+    .left-rounded{
+        border-bottom-left-radius: 15px !important;
+    }
+    .footerBtn{
+            transform: translate(10px) !important;
+            padding-inline: 40px !important;
+    }
+    .fa-brands{
+            font-size: 65px;
+            margin: 30px;
+    }
+    #footer-prag{
+        font-size: 25px !important;
+}
+   #degree{
+    font-size: 130px;
+    font-weight: 700;
+}
+.section-container input{
+    width: 50% !important;
+    padding: 25px !important;
+    margin: 5px !important;
+}
+.section-container .contact{
+    display: flex;
+    gap:5px;
+    margin-top: 10px !important;
+}
+}
