@@ -1,5 +1,5 @@
 const UI = {};
-document.addEventListener("DOMContentLoaded", function () {
+
    
 document.querySelectorAll("[id]").forEach(el => {
     UI[el.id] = el;
@@ -101,4 +101,4 @@ UI.searchInput.addEventListener("input",async function(){
              getWeather(lat,long)
         }
 })
-});
+
